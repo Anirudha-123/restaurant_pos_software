@@ -46,14 +46,14 @@ const StaffOrder = () => {
 
   return (
     <>
-      <div className=" px-4">
+      <div className="  bg-gray-50 px-4">
         <h2 className="text-black font-bold text-2xl pt-3">Billing & Orders</h2>
         <p className="text-gray-400 font-semibold ">
           Create bills for dine-in, takeway, and online orders
         </p>
 
-        <div className="grid grid-col lg:grid-row  gap-4">
-          <div className="left w-150 lg:w-4xl  ">
+        <div className="flex flex-col lg:flex-row  gap-4">
+          <div className="left w-full lg-w-3/4  ">
             <div className="search bg-white p-3 my-5 border border-gray-300">
               <input
                 type="text"
@@ -68,11 +68,11 @@ const StaffOrder = () => {
             <div className="menu border border-gray-300 p-5 bg-white">
               <h3 className="font-bold ms-2 text-green-600">{menuSelection}</h3>
 
-              <div className="grid grid-cols-2 p-2">
+              <div className="grid grid-cols-1 lg:grid-cols-2 p-2">
                 {filteredItems.map((item) => (
                   <>
-                    <div className="border border-gray-300 me-3 py-3 mb-2 rounded-xl">
-                      <div className="flex justify-between items-center">
+                    <div className="border border-gray-300 me-3 py-3 mb-2 rounded-xl ">
+                      <div className="flex justify-between items-center ">
                         <div className="div ms-3 space-y-2">
                           <h3>{item.name}</h3>
                           <p>₹ {item.price}</p>
@@ -88,8 +88,8 @@ const StaffOrder = () => {
               </div>
             </div>
           </div>
-          <div className="right flex-1 pt-5">
-            <div className="flex flex-col">
+          <div className="right  pt-5">
+            <div className="flex flex-col w-full lg-w-1/4">
               <div className="border border-gray-300 rounded-2xl bg-white">
                 <h3 className="font-bold text-green-400 text-2xl py-2 ms-3">
                   Categories
@@ -102,7 +102,7 @@ const StaffOrder = () => {
                         onClick={() => setMenuSelection(item.name)}
                       >
                         <div className="text-center font-semibold text-amber-700 ">
-                          <h3>{item.name}</h3>
+                          <h3 >{item.name}</h3>
                         </div>
                       </div>
                     </>

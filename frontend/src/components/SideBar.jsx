@@ -6,7 +6,7 @@ const SideBar = () => {
     <div className="hidden lg:flex lg:w-44 bg-orange-400 text-white p-5">
       <h2 className="text-xl font-semibold mb-8">SideBar</h2>
 
-      <nav className="flex flex-col gap-4">
+      <nav className="flex flex-col gap-4 ">
         <NavLink
           to="/staff"
           className={({ isActive }) =>

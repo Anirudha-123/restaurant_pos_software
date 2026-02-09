@@ -10,7 +10,7 @@ const DashBoardLayout = () => {
 
       <div className="flex-1">
         <div className="fixed top-0 left-0 lg:left-44 right-0 h-16 px-4 bg-white shadow-sm flex justify-between items-center z-10">
-          <Link to="/">
+          <Link to="/staff">
           <h3 className="font-semibold">Manager Dashboard</h3></Link>
           <button className="px-4 py-2 bg-red-400 hover:bg-red-500 text-white font-semibold">
             Logout
